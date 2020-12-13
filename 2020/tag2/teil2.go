@@ -36,7 +36,7 @@ func parseData() ([]string, error) {
 
 func operate() int {
 	keys := []*key{}
-	a, _ := parseData()
+	a, _ := parse()
 	prettyslice.Show("passwords: ", a)
 	input := regexp.MustCompile(`([0-9]+)-([0-9]+) ([a-z]): ([a-z]+)`)
 
